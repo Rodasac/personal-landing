@@ -1,0 +1,15 @@
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  margin-right: 2rem;
+  margin-top: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+.nav a {
+  color: var(--color-contrast);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
