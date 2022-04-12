@@ -10,7 +10,7 @@
   width: 100%;
 }
 
-.container {
+.section {
   padding: 0 2rem;
   position: relative;
 }
@@ -50,4 +50,19 @@
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.resumeSmall {
+  font-size: 0.8rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }

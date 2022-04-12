@@ -9,9 +9,11 @@ import {
   WhatsappLogo,
 } from "phosphor-react";
 
+import skills from "../shared/skills.json";
 import styles from "../styles/Home.module.css";
 
 import NavbarPrincipal from "../components/navbar/NavbarPrincipal";
+import ChipSkill from "../components/ui/skills/ChipSkill";
 
 const Home: NextPage = () => {
   return (
@@ -26,12 +28,12 @@ const Home: NextPage = () => {
           <source src="/assets/videos/lovecoding.mp4" type="video/mp4" />
         </video>
         <NavbarPrincipal />
-        <div className={styles.container}>
+        <header className={styles.section}>
           <h1 className={styles.title}>
             Hi! I&apos;m Adolfo Bastardo, a FullStack and Apps Developer
           </h1>
-        </div>
-        <div className={styles.profile}>
+        </header>
+        <section className={styles.profile}>
           <div className={styles.imageProfile}>
             <Image
               src="https://picsum.photos/300/300.webp"
@@ -47,7 +49,32 @@ const Home: NextPage = () => {
             <PhoneCall height={24} width={24} />
             <WhatsappLogo height={24} width={24} />
           </div>
-        </div>
+        </section>
+        <section className={styles.section}>
+          <h1 className={styles.sectionTitle}>Resume</h1>
+          <p>
+            I live in San Felipe - Venezuela, I&apos;m 27 years old and I like
+            plastic arts and choral music, I&apos;m a software developer skilled
+            in FullStack and Apps development using tools and high-level
+            technologies like Laravel, Wordpress, Python, Angular and ReactJS, I
+            have experience in the deploy and develop of{" "}
+            <span className="underline">Odoo based platforms*</span>.
+          </p>
+          <p className={styles.resumeSmall}>
+            *I worked with Odoo 6 to 12 versions.
+          </p>
+        </section>
+        <section className={styles.section}>
+          <h1 className={styles.sectionTitle}>Skills</h1>
+          <div className={styles.skills}>
+            {skills.map(({ color, skill }) => (
+              <ChipSkill key={skill} skill={skill} color={color} />
+            ))}
+          </div>
+        </section>
+        <section className={styles.section}>
+          <h1 className={styles.sectionTitle}>Work &amp; Experience</h1>
+        </section>
       </main>
     </>
   );

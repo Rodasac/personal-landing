@@ -1,0 +1,70 @@
+[
+  {
+    "skill": "JavaScript",
+    "color": "#D5EB33"
+  },
+  {
+    "skill": "TypeScript",
+    "color": "#6BB6EF"
+  },
+  {
+    "skill": "PHP",
+    "color": "#4684B4"
+  },
+  {
+    "skill": "Python",
+    "color": "#00B7FF"
+  },
+  {
+    "skill": "React.js",
+    "color": "#26809C"
+  },
+  {
+    "skill": "Angular",
+    "color": "#FF3F05"
+  },
+  {
+    "skill": "Next.js",
+    "color": "#05FFB0"
+  },
+  {
+    "skill": "Django",
+    "color": "#148A65"
+  },
+  {
+    "skill": "Odoo",
+    "color": "#E21DA3"
+  },
+  {
+    "skill": "Laravel",
+    "color": "#FF6652"
+  },
+  {
+    "skill": "Symfony",
+    "color": "#242424"
+  },
+  {
+    "skill": "Docker",
+    "color": "#00E1FF"
+  },
+  {
+    "skill": "AWS",
+    "color": "#FF7B00"
+  },
+  {
+    "skill": "GCP",
+    "color": "#FFD500"
+  },
+  {
+    "skill": "MariaDB",
+    "color": "#E1A219"
+  },
+  {
+    "skill": "MySQL",
+    "color": "#02618C"
+  },
+  {
+    "skill": "PostgreSQL",
+    "color": "#369DE2"
+  }
+]

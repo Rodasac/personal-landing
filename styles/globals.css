@@ -26,3 +26,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.underline {
+  text-decoration: underline;
+}

@@ -1,0 +1,12 @@
+.chip {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.chipColor {
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+}
