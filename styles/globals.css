@@ -4,7 +4,7 @@
   --color-main: #1f1f1f;
   --color-primary: #07a269;
   --color-secondary: #009ccc;
-  --color-shadows: #757575;
+  --color-shadows: rgba(117, 117, 117, 0.25);
 }
 
 html,
@@ -25,6 +25,26 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  margin-top: 0;
 }
 
 .underline {

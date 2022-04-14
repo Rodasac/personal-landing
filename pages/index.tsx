@@ -2,18 +2,23 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import {
+  Buildings,
+  Calendar,
   GithubLogo,
   GitlabLogo,
+  GraduationCap,
   LinkedinLogo,
   PhoneCall,
   WhatsappLogo,
 } from "phosphor-react";
 
 import skills from "../shared/skills.json";
+import jobs from "../shared/jobs.json";
 import styles from "../styles/Home.module.css";
 
 import NavbarPrincipal from "../components/navbar/NavbarPrincipal";
 import ChipSkill from "../components/ui/skills/ChipSkill";
+import Step from "../components/ui/steps/Step";
 
 const Home: NextPage = () => {
   return (
@@ -74,6 +79,29 @@ const Home: NextPage = () => {
         </section>
         <section className={styles.section}>
           <h1 className={styles.sectionTitle}>Work &amp; Experience</h1>
+          <div className={styles.steps}>
+            {jobs.map(({ indicator, title, location, date, description }) => (
+              <Step
+                key={title}
+                indicator={indicator}
+                title={title}
+                location={location}
+                date={date}
+                description={description}
+              />
+            ))}
+          </div>
+        </section>
+        <section className={styles.section}>
+          <h1 className={styles.sectionTitle}>Education</h1>
+          <div className={styles.education}>
+            <GraduationCap height={19} width={16} />
+            <h4>Computing Engineer</h4>
+            <Buildings height={19} width={16} />
+            <p>Misión Sucre, San Felipe, Venezuela</p>
+            <Calendar height={19} width={16} />
+            <p>2014 - Paused Since 2016</p>
+          </div>
         </section>
       </main>
     </>

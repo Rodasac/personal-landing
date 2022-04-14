@@ -1,0 +1,44 @@
+[
+  {
+    "indicator": "5",
+    "title": "FullStack Developer on Django",
+    "location": "Poder Justo, S.A.P.I de C.V",
+    "date": "Noviembre 2022 - Today",
+    "description": "I work in the great food and goods Mexican based ecommerce called Justo.mx, I started on Core Web team to improve actual functionalities and actually I work on Atlas Team (Operations related team) to provide efficient and elegant solutions on Backend and Frontend Dashboards based on Django, GraphQL and React.js."
+  },
+  {
+    "indicator": "4",
+    "title": "FullStack Developer on Symfony and React.js",
+    "location": "adCuality.com",
+    "date": "May 2020 - Today",
+    "description": ""
+  },
+  {
+    "indicator": "3",
+    "title": "FullStack Developer on Node.Js and React",
+    "location": "CobuildLab",
+    "date": "Mid February 2021 - July 2022",
+    "description": ""
+  },
+  {
+    "indicator": "2",
+    "title": "FullStack Developer on Odoo and Angular",
+    "location": "Oralsys.io",
+    "date": "December 2017 - March 2020",
+    "description": ""
+  },
+  {
+    "indicator": "1",
+    "title": "Junior Odoo Developer",
+    "location": "A.C. Hoatzin de Base Tecnológica R.L.",
+    "date": "November 2014 - November 2016",
+    "description": ""
+  },
+  {
+    "indicator": "0",
+    "title": "Free Technologies and Computing Instructor",
+    "location": "INCES",
+    "date": "March 2013 - December 2014",
+    "description": ""
+  }
+]
