@@ -7,18 +7,22 @@ import {
   GithubLogo,
   GitlabLogo,
   GraduationCap,
+  Heart,
   LinkedinLogo,
   PhoneCall,
   WhatsappLogo,
 } from "phosphor-react";
 
+import data from "../shared/personal-data.json";
 import skills from "../shared/skills.json";
 import jobs from "../shared/jobs.json";
+import itemCases from "../shared/personal-projects.json";
 import styles from "../styles/Home.module.css";
 
 import NavbarPrincipal from "../components/navbar/NavbarPrincipal";
 import ChipSkill from "../components/ui/skills/ChipSkill";
 import Step from "../components/ui/steps/Step";
+import ItemCase from "../components/ui/item-case/ItemCase";
 
 const Home: NextPage = () => {
   return (
@@ -48,11 +52,46 @@ const Home: NextPage = () => {
             />
           </div>
           <div className={styles.social}>
-            <GithubLogo height={24} width={24} />
-            <GitlabLogo height={24} width={24} />
-            <LinkedinLogo height={24} width={24} />
-            <PhoneCall height={24} width={24} />
-            <WhatsappLogo height={24} width={24} />
+            <a
+              href={data.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+            >
+              <GithubLogo height={24} width={24} />
+            </a>
+            <a
+              href={data.gitlab}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+            >
+              <GitlabLogo height={24} width={24} />
+            </a>
+            <a
+              href={data.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+            >
+              <LinkedinLogo height={24} width={24} />
+            </a>
+            <a
+              href={`tel:+${data.phone}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+            >
+              <PhoneCall height={24} width={24} />
+            </a>
+            <a
+              href={`https://wa.me/${data.phone}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+            >
+              <WhatsappLogo height={24} width={24} />
+            </a>
           </div>
         </section>
         <section className={styles.section}>
@@ -103,7 +142,44 @@ const Home: NextPage = () => {
             <p>2014 - Paused Since 2016</p>
           </div>
         </section>
+        <section className={styles.section}>
+          <h1 className={styles.sectionTitle}>Personal Projects</h1>
+          {itemCases.map(({ imageUrl, title, skills, url }) => (
+            <ItemCase
+              key={title}
+              imageUrl={imageUrl}
+              title={title}
+              skills={skills}
+              url={url}
+            />
+          ))}
+        </section>
+        <section className={styles.section}>
+          <h3>
+            And... this website! Designed in Framer and coded in Next.js
+            following the JAMStack software design.
+          </h3>
+          <h3>More projects in many languages coming soon.</h3>
+          <a
+            className={styles.contactMe}
+            href={`https://wa.me/${data.phone}`}
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            Do you wanna contact me?
+            <WhatsappLogo height={27} width={27} alignmentBaseline="central" />
+          </a>
+        </section>
       </main>
+      <footer className={styles.footer}>
+        <div className={styles.footerMessage}>
+          <h3>Made with </h3> <Heart width={17} height={17} color="#FF4D9A" />{" "}
+          <h3> from Venezuela</h3>
+        </div>
+        <p>
+          <strong>Copyright ©️ 2022</strong>
+        </p>
+      </footer>
     </>
   );
 };

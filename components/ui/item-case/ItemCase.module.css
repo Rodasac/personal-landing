@@ -1,0 +1,21 @@
+.itemCase {
+  margin-bottom: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.itemImage {
+  height: 170px;
+  margin-bottom: 0.35rem;
+  position: relative;
+  width: 100%;
+}
+
+.itemCase h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.itemCase p {
+  margin-bottom: 0.5rem;
+}

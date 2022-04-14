@@ -1,0 +1,14 @@
+[
+  {
+    "imageUrl": "/assets/images/oralsys-screen.png",
+    "title": "Oralsys Landing Page Redesign",
+    "skills": ["Next.js", "TypeScript", "Sass"],
+    "url": "https://oralsys.vercel.app/"
+  },
+  {
+    "imageUrl": "/assets/images/oliver-screen.png",
+    "title": "e.Oliver Design Implementation on Angular",
+    "skills": ["Angular", "TypeScript", "Sass"],
+    "url": "https://adolfo-oliver-theme.netlify.app/"
+  }
+]

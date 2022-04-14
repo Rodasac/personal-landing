@@ -53,6 +53,10 @@
   margin-top: 1rem;
 }
 
+.socialLink {
+  color: var(--color-primary);
+}
+
 .sectionTitle {
   font-size: 1.8rem;
   font-weight: 600;
@@ -81,4 +85,39 @@
 .education h4,
 .education p {
   margin-bottom: 0;
+}
+
+.contactMe {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.contactMe svg {
+  margin-left: 0.6rem;
+  vertical-align: bottom;
+}
+
+.footer {
+  background-color: var(--color-main);
+  color: var(--color-contrast);
+  margin-top: 2rem;
+}
+
+.footerMessage {
+  align-items: center;
+  display: flex;
+  gap: 0 0.5rem;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.footerMessage h3 {
+  margin-bottom: 0;
+}
+
+.footer p {
+  margin-bottom: 0;
+  padding-bottom: 0.5rem;
+  text-align: center;
 }
